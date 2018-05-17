@@ -50,3 +50,12 @@
         $comments = $comments->fetch_all(MYSQLI_ASSOC);
         return $comments;
     }
+
+    function updateComments($db) {
+        $query = "UPDATE comments SET user='pierre' WHERE user='admin'";
+        $comments = $db->query($query);
+        $query = "SELECT * FROM comments";
+        $comments = $db->query($query);
+        $comments = $comments->fetch_all(MYSQLI_ASSOC);
+        return $comments;
+    }

@@ -9,7 +9,7 @@
     <li><a href="?action=admin">Show only admin's comments</a></li>
     <li><a href="?action=remove">Remove admin's comments</a></li>
     <li><a href="?action=create">Create a comment</a></li>
-    <li><a href="?action=updateUser">Change user's comment to pierre</a></li>
+    <li><a href="?action=update-user">Change user 'admin' to 'pierre'</a></li>
 </ul>
 <ul>
     <?php foreach ($getComments as $comment): ?>
